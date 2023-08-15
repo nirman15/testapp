@@ -8,5 +8,6 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'Test App';
   test='Test variable';
-  a="1";
+  a="12";
+
 }
