@@ -19,4 +19,12 @@ export class BookComponent {
 
 
 
+handleClick(){
+  this.isdisabled = true;
+  // alert("I AM WORKING");
+}
+
+
+
+
 }
