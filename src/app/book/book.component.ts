@@ -15,16 +15,18 @@ export class BookComponent {
   src2: string = "https://img.freepik.com/free-vector/hand-drawn-world-book-day-illustration-with-stack-books_23-2148868267.jpg?size=626&ext=jpg";
 
 
-  isdisabled: boolean = false;
+isShowing: boolean = true;
+
+ngOnInit(): void{}
 
 
-
-handleClick(){
-  this.isdisabled = true;
-  // alert("I AM WORKING");
-}
 
 
 
 
 }
+
+
+
+
+
