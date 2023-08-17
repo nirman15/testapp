@@ -1,16 +1,18 @@
 <h2>Programming books list!</h2>
-<button (click)="isShowing = !isShowing"> toggle Books </button>
 
 
-<ul *ngif="isShowing">
-    <li>
-        <img [src]="src" alt="{{ Name }}" width="100">
-        {{ Name }} by  {{ Author }}
+
+<ul >
+    <ng-container *ngFor="let book of books; let i=index">
+
+
+    <li class="book">
+        <p class="srno.">{{i+1}}</p>
+        <img [src]="book.image" [alt]="book.Name" width="100">
+        <p class="title">{{ book.Name | titlecase }} by  {{ book.Author|titlecase }}</p>
+        <p class="currency">{{ book.amount | currency:'INR' }} </p>
 </li>
-<li>
-    <img [src]="src2" alt="" width="100">
-    {{Name2}} by {{Author2}}
-</li>
+</ng-container>
 </ul>
 
 
