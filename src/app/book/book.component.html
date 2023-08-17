@@ -1,6 +1,8 @@
 <h2>Programming books list!</h2>
-<button  (click)="handleClick()" (mouseover)="handleClick()" [disabled]="isdisabled"> Show Books </button>
-<ul>
+<button (click)="isShowing = !isShowing"> toggle Books </button>
+
+
+<ul *ngif="isShowing">
     <li>
         <img [src]="src" alt="{{ Name }}" width="100">
         {{ Name }} by  {{ Author }}
