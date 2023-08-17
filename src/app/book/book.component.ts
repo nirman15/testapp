@@ -16,6 +16,7 @@ export class BookComponent {
 
 
 isShowing: boolean = true;
+testvariable:any="Test";
 
 ngOnInit(): void{}
 
