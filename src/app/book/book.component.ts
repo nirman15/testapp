@@ -17,10 +17,9 @@ export class BookComponent {
 
 isShowing: boolean = true;
 
-ngOnInit(): void{}
-
-
-
+toggleBooks(){
+  this.isShowing = !this.isShowing
+}
 
 
 

@@ -1,14 +1,15 @@
 <h2>Programming books list!</h2>
-<button (click)="isShowing = !isShowing"> toggle Books </button>
+<button  (click)="isShowing = !isShowing">Toggle books</button>
 
 
-<ul *ngif="isShowing">
+
+<ul *ngIf="isShowing">
     <li>
-        <img [src]="src" alt="{{ Name }}" width="100">
+        <img [src]="src" [alt]="Name" width="100">
         {{ Name }} by  {{ Author }}
 </li>
 <li>
-    <img [src]="src2" alt="" width="100">
+    <img [src]="src2" [alt]="Name" width="100">
     {{Name2}} by {{Author2}}
 </li>
 </ul>
