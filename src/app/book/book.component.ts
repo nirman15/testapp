@@ -1,15 +1,9 @@
 import { Component } from '@angular/core';
+import { book } from '../types/Book';
 
 
 
 
-interface book{
-  name: string;
-  author: string;
-  image: string;
-  amount:number;
-
-}
 
 
 
@@ -56,13 +50,13 @@ export class BookComponent  {
       image: "https://jamesclear.com/wp-content/uploads/2019/02/atomic-habits_gallery_hi-res_04.jpg",
       amount:799,
 
-    }
-  ]
+    },
+  ];
 
 
 
 
-
+card: book[] = [];
   
 
 isShowing: boolean = true;
