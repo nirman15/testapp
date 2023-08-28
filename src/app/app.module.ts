@@ -5,10 +5,12 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BookComponent } from './book/book.component';
 import { FormsModule } from '@angular/forms';
+import { BooksComponent } from './book/books/books.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+  BooksComponent,
     BookComponent,
 
   ],
