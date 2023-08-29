@@ -1,17 +1,18 @@
-<h2>Programming books list!</h2>
-<button (click)="isShowing = !isShowing"> toggle Books </button>
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body>
 
+<div ng-app="">
+ 
+<p>Input something in the input box:</p>
+<p>Name : <input type="text" ng-model="name" placeholder="Enter name here"></p>
+<h1>Hello {{name}}</h1>
 
-<ul *ngif="isShowing">
-    <li>
-        <img [src]="src" alt="{{ Name }}" width="100">
-        {{ Name }} by  {{ Author }}
-</li>
-<li>
-    <img [src]="src2" alt="" width="100">
-    {{Name2}} by {{Author2}} {{testvariable}}
-</li>
-</ul>
+</div>
+
+</body>
+</html>
 
 
 
