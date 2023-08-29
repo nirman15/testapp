@@ -62,9 +62,6 @@ card: book[] = [];
 isShowing: boolean = true;
 
 
-
-
-
 }
 
 
