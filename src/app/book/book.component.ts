@@ -59,7 +59,7 @@ export class BookComponent  {
 card: book[] = [];
   
 
-isShowing: boolean = false;
+isShowing: boolean = true;
 
 
 }
